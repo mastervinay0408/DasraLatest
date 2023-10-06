@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@MainActivity,
-                    RegisterActivity::class.java
+                    HomePage1::class.java
                 )
             )
         }

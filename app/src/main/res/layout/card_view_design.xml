@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
     app:cardElevation="6dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp">
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/tv_program_name"
@@ -25,6 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
+            android:layout_marginTop="5dp"
             android:textStyle="bold"
             android:layout_below="@+id/tv_program_name"
             android:text="Created on 1st Nov, 2023"
@@ -34,6 +36,7 @@
             android:id="@+id/tv_total_part"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:text="Total Participant"
             android:layout_below="@+id/tv_created_on"
             android:textSize="15sp"
@@ -43,6 +46,7 @@
             android:id="@+id/tv_total_part_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:textSize="15sp"
             android:textStyle="bold"
             android:layout_below="@+id/tv_total_part"
@@ -52,9 +56,13 @@
 
         <TextView
             android:id="@+id/tv_last_activity"
+            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Program Name"
+            android:layout_below="@+id/tv_created_on"
+            android:layout_marginStart="89dp"
+            android:layout_toEndOf="@+id/tv_total_part"
+            android:text="Last Activity"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -62,19 +70,23 @@
             android:id="@+id/tv_last_activity_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_last_activity"
+            android:layout_marginStart="89dp"
+            android:layout_toEndOf="@+id/tv_total_part"
+            android:text="October, 2022"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:layout_below="@+id/tv_total_part_count"
-            android:text="Created on 1st Nov, 2023"
-            />
+            android:textStyle="bold" />
 
-<!--        <Button-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="VIEW"-->
-<!--            android:background="@color/colorPrimaryDark">-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"
+            android:text="VIEW">
 
-<!--        </Button>-->
+        </Button>
 
     </RelativeLayout>
 

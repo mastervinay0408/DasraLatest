@@ -25,10 +25,10 @@ class CustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerView.Adap
         val ItemsViewModel = mList[position]
 
         // sets the image to the imageview from our itemHolder class
-        holder.imageView.setImageResource(ItemsViewModel.image)
-
-        // sets the text to the textview from our itemHolder class
-        holder.textView.text = ItemsViewModel.text
+//        holder.imageView.setImageResource(ItemsViewModel.image)
+//
+//        // sets the text to the textview from our itemHolder class
+//        holder.textView.text = ItemsViewModel.text
 
     }
 
@@ -39,7 +39,6 @@ class CustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerView.Adap
 
     // Holds the views for adding it to image and text
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-        val imageView: ImageView = itemView.findViewById(R.id.imageview)
-        val textView: TextView = itemView.findViewById(R.id.textView)
+
     }
 }
