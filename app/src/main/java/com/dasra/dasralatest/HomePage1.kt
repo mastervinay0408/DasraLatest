@@ -30,14 +30,14 @@ class HomePage1 : AppCompatActivity() {
         val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
 
         // this creates a vertical layout Manager
-        recyclerview.layoutManager = LinearLayoutManager(this ,LinearLayoutManager.HORIZONTAL, false)
+        recyclerview.layoutManager = LinearLayoutManager(this ,LinearLayoutManager.VERTICAL, false)
 
         // ArrayList of class ItemsViewModel
         val data = ArrayList<ItemsViewModel>()
 
         // This loop will create 20 Views containing
         // the image with the count of view
-        for (i in 1..20) {
+        for (i in 1..3) {
             data.add(ItemsViewModel("","","","", "" , ""))
         }
 
