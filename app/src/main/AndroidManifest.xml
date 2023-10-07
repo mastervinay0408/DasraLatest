@@ -13,7 +13,7 @@
         android:theme="@style/Theme.DasraLatest"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivty"
             android:label="YourAppName"
             android:exported="true">
             <intent-filter>
@@ -23,8 +23,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".RegisterActivity3" />
         <activity android:name=".HomePage1" />
         <activity android:name=".ProgramPage" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity2" />
     </application>
 
 </manifest>
